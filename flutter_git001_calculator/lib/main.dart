@@ -313,6 +313,58 @@ class _scr006RouteState extends State<scr006Route> {
                   ),
                 ],
               ),
+              Row(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.all(4),
+                    width: 50,
+                    height: 50,
+//              decoration: BoxDecoration(
+//                color: Colors.blue,
+//                border: Border.all(),
+//              ),
+                    child: TextButton(
+                      child: const Text(
+                        '+',
+                        style: TextStyle(color: Colors.blueAccent),
+                      ),
+                      onPressed: () => _buttonPressed('x'),
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.all(4),
+                    width: 50,
+                    height: 50,
+//              decoration: BoxDecoration(
+//                color: Colors.blue,
+//                border: Border.all(),
+//              ),
+                    child: TextButton(
+                      child: const Text(
+                        '-',
+                        style: TextStyle(color: Colors.blueAccent),
+                      ),
+                      onPressed: () => _buttonPressed('/'),
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.all(4),
+                    width: 50,
+                    height: 50,
+//              decoration: BoxDecoration(
+//                color: Colors.blue,
+//                border: Border.all(),
+//              ),
+                    child: TextButton(
+                      child: const Text(
+                        '=',
+                        style: TextStyle(color: Colors.blueAccent),
+                      ),
+                      onPressed: () => _buttonPressed('C'),
+                    ),
+                  ),
+                ],
+              ),
             ]),
           ),
         )
